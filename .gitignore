@@ -1,0 +1,7 @@
+.idea
+.vagrant
+.node
+*.iml
+*.iws
+*.ipr
+*/target/*
