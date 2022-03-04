@@ -4,4 +4,5 @@ In this project I collect interesting exercises from the internet and my solutio
 
 ## List of Exercises
 
-- [Battleship 8x8](./battleship8x8/README.md) 
+- [Battleship 8x8](./battleship-8x8/README.md) 
+- [Streams pipelines](./streams-pipelines/README.md)

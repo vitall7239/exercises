@@ -12,7 +12,7 @@ public class MyBattleship8x8 {
     }
 
     public boolean shoot(String shot) {
-        if(Objects.isNull(shot) || shot.length() != 2) {
+        if (Objects.isNull(shot) || shot.length() != 2) {
             System.out.println("Error: shot has wrong format");
             return false;
         }
@@ -26,22 +26,22 @@ public class MyBattleship8x8 {
 
     public String state() {
         StringBuilder state = new StringBuilder();
-        for(int i = 0; i < 64; i++){
-            if(i % 8 == 0 && i != 0){
+        for (int i = 0; i < 64; i++) {
+            if (i % 8 == 0 && i != 0) {
                 state.append('\n');
             }
             int shift = 63 - i;
             long mask = 1L << shift;
-            if((ships & mask) == 0){
-                if((shots & mask) == 0){
+            if ((ships & mask) == 0) {
+                if ((shots & mask) == 0) {
                     state.append('.');
-                }else{
+                } else {
                     state.append('×');
                 }
-            }else{
-                if((shots & mask) == 0){
+            } else {
+                if ((shots & mask) == 0) {
                     state.append('☐');
-                }else{
+                } else {
                     state.append('☒');
                 }
             }

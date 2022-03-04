@@ -14,10 +14,12 @@
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <junit.version>5.8.2</junit.version>
     </properties>
 
     <modules>
-        <module>battleship8x8</module>
+        <module>battleship-8x8</module>
+        <module>streams-pipelines</module>
     </modules>
 
 </project>
